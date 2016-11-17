@@ -9,7 +9,7 @@ public abstract class Vegetable {
     private double price;
     private boolean requiredHeadTratment;
     
-    // 
+    // разобрать геттеры и сеттеры еще раз. 
     public String getName () {
         return name;
     }
