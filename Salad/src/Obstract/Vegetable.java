@@ -12,5 +12,6 @@ public abstract class Vegetable {
     // разобрать геттеры и сеттеры еще раз. 
     public String getName () {
         return name;
-    }
+    } 
 }
+//moving in OOP branch
