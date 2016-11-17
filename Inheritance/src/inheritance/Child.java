@@ -32,6 +32,7 @@ public class Child extends Person {
         this.father = father;
     }
     
+    @Override
     public String getInfo() {
         return super.getInfo()
                 + "\n Mother: " + this.mother.getInfo()

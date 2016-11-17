@@ -5,7 +5,7 @@ public class Arithmetic {
     
     public double x; 
     public double y; 
-    public double result = 42; 
+    public double result; 
     
  //Default constructor  
     public Arithmetic () {
@@ -28,10 +28,17 @@ public class Arithmetic {
     }
     
     public double division (double x, double  y) {
-        if (y == 0) {
-            System.out.println("Делить на ноль исторически не преемлемно" + " Потому что: ");
-        } else {
-        result = x / y;
+        try {
+            if (y == 0) {
+                System.out.println("Делите на НОЛЬ, имейте в виду: \n"+
+                        "1/0 дает Infinity.\n" +
+                        "(-1)/0 дает -Infinity.\n" +
+                        "0/0 дает NaN.\n" +
+                        "Побробее о том что это за числа, описано в RFC IEEE 754 \n");
+            }
+            result = x / y;
+            } catch (ArithmeticException e) {
+            System.out.println("Делить на ноль исторически не преемлемно" + " Потому что 42 и" + e.getMessage());
         }
         return result;
     }

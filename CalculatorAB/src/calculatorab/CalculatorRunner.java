@@ -42,15 +42,19 @@ public class CalculatorRunner {
                     case 3: out.println("Будет выполнено сложение(3) двух чисел. "); break;
                     case 4: out.println("Будет выполнено вычитание(4) одного числа из второго. "); break;
                 }
-                out.println("\n" + "Введите первое число, например -3,14, и нажмите ввод:");
+                out.println("\n" + "Введите первое число, например -3,14 и нажмите ввод:");
                 x = in.nextDouble();
                 out.println("Введи второе число и нажмите ввод:");
                 y = in.nextDouble();
                     switch (userChoice) {
-                        case 3: out.println("Результатом слажения " + x + " и " + y + " является " + c.add(x, y)+ "\n"); break;
-                        case 1: out.println("Результатом умножения " + x + " и " + y + " является " + c.multiplicate(x, y)+ "\n"); break;
-                        case 2: out.println("Результатом деления " + x + " на " + y + " является " + c.division(x, y)+ "\n"); break;
-                        case 4: out.println("Результатом вычитания " + y + " из " + x + " является " + c.subtraction(x, y)+ "\n"); break;
+                        case 3: out.println("Результатом слажения " + x + " и " + y + 
+                                " является " + c.add(x, y)+ "\n"); break;
+                        case 1: out.println("Результатом умножения " + x + " и " + y + 
+                                " является " + c.multiplicate(x, y)+ "\n"); break;
+                        case 2: out.println("Результатом деления " + x + " на " + y + 
+                                " является " + c.division(x, y)+ "\n"); break;
+                        case 4: out.println("Результатом вычитания " + y + " из " + x + 
+                                " является " + c.subtraction(x, y)+ "\n"); break;
                     }
                     
                 out.println("Повторить операцию с другими числами? (Y/n):");
@@ -65,8 +69,8 @@ public class CalculatorRunner {
                     ex.printStackTrace(System.err);} // end of catch 
             } // end of while
         } catch (InputMismatchException ex) {
-            out.println("\n" + "Введите число при следующем запуске." + "\n");
-            ex.printStackTrace(System.err);} //end of catch (inputMistatchException)
+            out.println("\n" + "Введите число при следующем запуске. \n Разделителем в дробных числах является запятая" + "\n");
+            ex.printStackTrace(System.err);} //end of catch (inputMismatchException)
     } //end of main
 } //end of class
 

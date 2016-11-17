@@ -1,7 +1,6 @@
 package matrixmultiplication;
  //@date Oct 18, 2016
  //@author Artsiom_Berazav
-import java.util.Arrays;
 
 public class Mult {
     public static double [][] result (double m0[][], double m1[][] ) {
