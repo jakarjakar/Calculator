@@ -34,7 +34,7 @@ public class Arithmetic {
                         "1/0 дает Infinity.\n" +
                         "(-1)/0 дает -Infinity.\n" +
                         "0/0 дает NaN.\n" +
-                        "Побробее о том что это за числа, описано в RFC IEEE 754 \n");
+                        "Подробнее о том что это за числа, описано в RFC IEEE 754 \n");
             }
             result = x / y;
             } catch (ArithmeticException e) {
