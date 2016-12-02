@@ -1,51 +1,47 @@
 package calculatorab;
-//@author Artsiom_Berazavik
 
 public class Arithmetic {
-    
-    public double x; 
-    public double y; 
-    public double result; 
-    
- //Default constructor  
-    public Arithmetic () {
+
+    public double x;
+    public double y;
+    public double result;
+
+    public Arithmetic() {
     }
-    
-//Constructor, wait for two double
-    public Arithmetic (double x, double y) {
+
+    public Arithmetic(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public double add (double x, double y) {
+    public double adding(double x, double y) {
         result = x + y;
         return result;
     }
-    
-    public double multiplicate (double x, double y) {
+
+    public double multiplication(double x, double y) {
         result = x * y;
         return result;
     }
-    
-    public double division (double x, double  y) {
+
+    public double divisioning(double x, double y) {
         try {
             if (y == 0) {
-                System.out.println("Делите на НОЛЬ, имейте в виду: \n"+
-                        "1/0 дает Infinity.\n" +
-                        "(-1)/0 дает -Infinity.\n" +
-                        "0/0 дает NaN.\n" +
-                        "Подробнее о том что это за числа, описано в RFC IEEE 754 \n");
+                System.out.println("Делите на НОЛЬ, имейте в виду: \n"
+                        + "1/0 retunt Infinity.\n"
+                        + "(-1)/0 return -Infinity.\n"
+                        + "0/0 return NaN.\n"
+                        + "Additional ifo in RFC IEEE 754 \n");
             }
             result = x / y;
-            } catch (ArithmeticException e) {
-            System.out.println("Делить на ноль исторически не преемлемно" + " Потому что 42 и" + e.getMessage());
+        } catch (ArithmeticException e) {
+            System.out.println("Deviding by 0 detected, do not do that" + e.getMessage());
         }
         return result;
     }
 
-    public double subtraction(double x, double y) {
-        result =  x - y;
+    public double subtractioning(double x, double y) {
+        result = x - y;
         return result;
     }
 }
-
